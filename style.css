@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f8f9fa;
-    padding-top: 56px;
+    padding-top: 3.5rem;
 }
 
 .navbar {
@@ -16,27 +16,44 @@ body {
     object-fit: contain;
 }
 
-.hero-section {
-    padding: 80px 0;
+.home-section {
+    min-height: calc(100vh - 3.5rem);
+    display: flex;
+    align-items: center;
     background-color: #ffffff;
     border-bottom: 1px solid #dee2e6;
 }
 
-.contact-section-hero-style {
-    padding: 40px 0;
-    background-color: #ffffff;
-    border-top: 1px solid #dee2e6;
-}
-
-.project-card,
-.contact-card {
+.project-card {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.project-card:hover,
-.contact-card:hover {
+.project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+}
+
+.project-img-placeholder {
+    height: 300px;
+    background: #f1f5f9;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.btn-custom {
+    background-color: #111827;
+    color: #ffffff;
+    border: 1px solid #111827;
+}
+
+.btn-custom:hover {
+    background-color: #0b1220;
+    border-color: #0b1220;
 }
 
 .profile-img {
