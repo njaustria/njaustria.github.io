@@ -49,6 +49,10 @@ body {
     overflow: hidden;
 }
 
+.project-card .card-text {
+    flex-grow: 1;
+}
+
 .btn-custom {
     background-color: #111827;
     color: #ffffff;
