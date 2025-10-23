@@ -71,3 +71,9 @@ body {
     border-radius: 50%;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .15);
 }
+
+.timeline-item {
+    padding-left: 20px;
+    border-left: 3px solid #dee2e6;
+    position: relative;
+}
