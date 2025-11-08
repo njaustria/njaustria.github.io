@@ -12,9 +12,12 @@
 </head>
 
 <body>
+  <video id="background-video" autoplay loop muted poster="placeholder.jpg">
+    <source src="background_vid.mp4" type="video/mp4">
+  </video>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
       <a class="navbar-brand" href="#home">
         <img src="logo.png" alt="Neian Austria Logo" class="navbar-logo">
       </a>
@@ -32,133 +35,151 @@
     </div>
   </nav>
 
-  <header id="home" class="home-section text-center text-md-start">
-    <div class="container">
+  <header id="home" class="portfolio-section text-center text-md-start">
+    <div class="container py-5">
       <div class="row align-items-center">
-        <div class="col-md-8">
-          <h1 class="display-2 fw-bold text-black">Neian Austria</h1>
-          <p class="lead text-secondary mt-3">
+        <div class="col-md-5 order-md-2 text-center mt-4 mt-md-0">
+          <img src="neian.png" alt="Neian Austria Profile Picture" class="profile-img">
+        </div>
+        <div class="col-md-7 order-md-1">
+          <h1 class="display-2 fw-bold mt-3">Neian Austria</h1>
+          <p class="lead mt-3">
             I am a third-year Bachelor of Science in Information Technology (BSIT) student at Polytechnic
             University of the Philippines, Sto. Tomas campus. I am passionate about technology and building projects.
           </p>
 
           <div class="mt-4">
-            <a class="btn btn-custom btn-sm rounded-pill" href="https://github.com/njaustria" target="_blank"
+            <a class="btn btn-custom rounded-pill" href="https://github.com/njaustria" target="_blank"
               rel="noopener noreferrer" aria-label="GitHub">
               <i class="bi bi-github"></i>
             </a>
-            <a class="btn btn-custom btn-sm rounded-pill" href="https://www.linkedin.com/in/njaustria" target="_blank"
+            <a class="btn btn-custom rounded-pill" href="https://www.linkedin.com/in/njaustria" target="_blank"
               rel="noopener noreferrer" aria-label="LinkedIn">
               <i class="bi bi-linkedin"></i>
             </a>
-            <a class="btn btn-custom btn-sm rounded-pill" href="https://www.instagram.com/austrianeian" target="_blank"
+            <a class="btn btn-custom rounded-pill" href="https://www.instagram.com/austrianeian" target="_blank"
               rel="noopener noreferrer" aria-label="Instagram">
               <i class="bi bi-instagram"></i>
             </a>
-            <a class="btn btn-custom btn-sm rounded-pill" href="Neian_Austria_CV.pdf" download title="Download CV"
+            <a class="btn btn-custom rounded-pill" href="Neian_Austria_CV.pdf" download title="Download CV"
               aria-label="Download CV">
               <i class="bi bi-download"></i>
             </a>
           </div>
         </div>
-        <div class="col-md-4 text-center mt-4 mt-md-0">
-          <img src="neian.jpg" alt="Neian Austria Profile Picture" class="profile-img">
-        </div>
       </div>
     </div>
   </header>
 
-  <section id="projects" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-5 display-4 fw-bold text-black">My Projects</h2>
-      <div class="row g-4">
-        <div class="col-lg-4 col-md-6">
-          <div class="card shadow-sm h-100 project-card border-0">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">ManoySneaks</h5>
-              <p class="card-text text-muted">A user-friendly Footwear Management System that streamlines inventory
-                tracking, sales recording, and product updates in real time, helping businesses manage footwear
-                efficiently and accurately.</p>
-              <img src="manoysneaks.jpg" class="project-img-placeholder img-fluid">
-              <div class="mt-auto">
-                <a href="https://github.com/njaustria/ManoySneaks" class="btn btn-custom btn-sm rounded-pill mt-3">View
-                  Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
+  <section id="projects" class="portfolio-section">
+    <div class="container py-5">
+      <h2 class="text-center mb-5 display-4 fw-bold">My Projects</h2>
+      <div class="row g-4 justify-content-center">
 
         <div class="col-lg-4 col-md-6">
-          <div class="card shadow-sm h-100 project-card border-0">
-            <div class="card-body d-flex flex-column">
+          <div class="card h-100 project-card">
+            <div class="card-body">
               <h5 class="card-title fw-bold">Gadget Specifications</h5>
-              <p class="card-text text-muted">A responsive website that highlights the iPhone 17’s sleek design,
+              <p class="card-text">A responsive website that highlights the iPhone 17’s sleek design,
                 powerful performance, and advanced features for easy viewing across all devices.</p>
-              <img src="gadgetspec.jpg" class="project-img-placeholder img-fluid">
-              <div class="mt-auto">
-                <a href="https://njaustria.github.io/Gadget-Specifications"
-                  class="btn btn-custom btn-sm rounded-pill mt-3">View Project</a>
-              </div>
+              <img src="gadgetspec.jpg" alt="Gadget Specifications Project Screenshot" class="project-img-placeholder">
+              <a href="https://njaustria.github.io/Gadget-Specifications"
+                class="btn btn-custom rounded-pill mt-auto mt-3">View Project</a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6">
-          <div class="card shadow-sm h-100 project-card border-0">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">Jade Hotels</h5>
-              <p class="card-text text-muted">A Hotel Management System using XAMPP is a local web application that
-                manages room bookings, guest records, and billing through a PHP-MySQL database, providing an efficient
-                and offline solution for hotel operations.</p>
-              <img src="jadehotels.png" class="project-img-placeholder img-fluid">
-              <div class="mt-auto">
-                <a href="https://github.com/njaustria/Jade-Hotels" class="btn btn-custom btn-sm rounded-pill mt-3">View
-                  Project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="card shadow-sm h-100 project-card border-0">
-            <div class="card-body d-flex flex-column">
+          <div class="card h-100 project-card">
+            <div class="card-body">
               <h5 class="card-title fw-bold">Taal Volcano Showcase</h5>
-              <p class="card-text text-muted">Taal Volcano, located in Batangas, Philippines, is one of the world’s
+              <p class="card-text">Taal Volcano, located in Batangas, Philippines, is one of the world’s
                 smallest yet most active volcanoes, featuring a stunning crater lake within its caldera. Its dramatic
                 landscapes and geothermal activity make it a captivating natural wonder for visitors.</p>
-              <img src="taal_volcano_showcase.png" class="project-img-placeholder img-fluid">
-              <div class="mt-auto">
-                <a href="https://njaustria.github.io/Taal-Volcano-Showcase"
-                  class="btn btn-custom btn-sm rounded-pill mt-3">View Project</a>
-              </div>
+              <img src="taal_volcano_showcase.png" alt="Taal Volcano Showcase Project Screenshot"
+                class="project-img-placeholder">
+              <a href="https://njaustria.github.io/Taal-Volcano-Showcase"
+                class="btn btn-custom rounded-pill mt-auto mt-3">View Project</a>
             </div>
           </div>
         </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 project-card">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">ManoySneaks</h5>
+              <p class="card-text">A user-friendly Footwear Management System that streamlines inventory
+                tracking, sales recording, and product updates in real time, helping businesses manage footwear
+                efficiently and accurately.</p>
+              <img src="manoysneaks.jpg" alt="ManoySneaks Project Screenshot" class="project-img-placeholder">
+              <a href="https://github.com/njaustria/ManoySneaks" class="btn btn-custom rounded-pill mt-auto mt-3">View
+                Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 project-card">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Jade Hotels</h5>
+              <p class="card-text">A Hotel Management System using XAMPP is a local web application that
+                manages room bookings, guest records, and billing through a PHP-MySQL database, providing an efficient
+                and offline solution for hotel operations.</p>
+              <img src="jadehotels.png" alt="Jade Hotels Project Screenshot" class="project-img-placeholder">
+              <a href="https://github.com/njaustria/Jade-Hotels" class="btn btn-custom rounded-pill mt-auto mt-3">View
+                Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 project-card">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">New Project</h5>
+              <p class="card-text">Description</p>
+              <img src="#" alt="Project Picture" class="project-img-placeholder">
+              <a href="#" class="btn btn-custom rounded-pill mt-auto mt-3">View
+                Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 project-card">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">New Project</h5>
+              <p class="card-text">Description</p>
+              <img src="#" alt="Project Picture" class="project-img-placeholder">
+              <a href="#" class="btn btn-custom rounded-pill mt-auto mt-3">View
+                Project</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section id="education" class="py-5 bg-white border-top">
-    <div class="container">
-
-      <h2 class="text-center mb-5 display-4 fw-bold text-black">Educational Background</h2>
+  <section id="education" class="portfolio-section">
+    <div class="container py-5">
+      <h2 class="text-center mb-5 display-4 fw-bold">Educational Background</h2>
       <div class="row g-5">
 
         <div class="col-lg-6">
           <h3 class="mb-4 fw-bold text-center">Academics</h3>
-
-          <div class="timeline-item mb-4">
+          <div class="timeline-item">
             <h5 class="fw-bold">Polytechnic University of the Philippines, Sto. Tomas Campus</h5>
-            <p class="text-muted mb-1">Bachelor of Science in Information Technology (BSIT)</p>
-            <p class="small text-secondary">2023 - Present</p>
-            <p>Currently in my third year, focused on developing strong foundations in programming, database management,
+            <p class="mb-1">Bachelor of Science in Information Technology (BSIT)</p>
+            <p class="small">2023 - Present</p>
+            <p>Currently in my third year, focused on developing strong foundations in programming, database
+              management,
               and system analysis.</p>
           </div>
 
-          <div class="timeline-item mb-4">
+          <div class="timeline-item mb-0">
             <h5 class="fw-bold">Saint Benilde International School Calamba</h5>
-            <p class="text-muted mb-1">STEM (Science, Technology, Engineering, and Mathematics)</p>
-            <p class="small text-secondary">2021 - 2023</p>
+            <p class="mb-1">STEM (Science, Technology, Engineering, and Mathematics)</p>
+            <p class="small">2021 - 2023</p>
             <p>Graduated with honors</p>
           </div>
         </div>
@@ -167,24 +188,24 @@
           <h3 class="mb-4 fw-bold text-center">E-Certificates</h3>
           <div class="row g-3">
             <div class="col-md-6">
-              <div class="card h-100 shadow-sm certificate-card">
-                <div class="card-body d-flex flex-column align-items-center text-center">
+              <div class="glass-container">
+                <div class="card-body text-center">
                   <i class="bi bi-patch-check-fill display-4 text-success mb-3"></i>
                   <h6 class="card-title fw-bold">Operating Systems Basics</h6>
-                  <p class="card-text small text-muted">Cisco Networking Academy</p>
-                  <a href="ciscocert.pdf" class="btn btn-custom btn-sm mt-auto" target="_blank"
+                  <p class="card-text">Cisco Networking Academy</p>
+                  <a href="ciscocert.pdf" class="btn btn-custom rounded-pill mt-auto" target="_blank"
                     rel="noopener noreferrer">View Certificate</a>
                 </div>
               </div>
             </div>
 
             <div class="col-md-6">
-              <div class="card h-100 shadow-sm certificate-card">
-                <div class="card-body d-flex flex-column align-items-center text-center">
+               <div class="glass-container">
+                <div class="card-body text-center">
                   <i class="bi bi-patch-check-fill display-4 text-success mb-3"></i>
                   <h6 class="card-title fw-bold">Second Certificate</h6>
-                  <p class="card-text small text-muted">Academy</p>
-                  <a href="#" class="btn btn-custom btn-sm mt-auto" target="_blank" rel="noopener noreferrer">View
+                  <p class="card-text">Academy</p>
+                  <a href="#" class="btn btn-custom rounded-pill mt-auto" target="_blank" rel="noopener noreferrer">View
                     Certificate</a>
                 </div>
               </div>
@@ -194,34 +215,33 @@
           <h3 class="mb-4 mt-5 fw-bold text-center">Organizations</h3>
           <div class="row g-3">
             <div class="col-md-6">
-              <div class="card h-100 shadow-sm organization-card">
-                <div class="card-body text-center">
+              <div class="glass-container">
+                <div class="bi bi-people-fill card-body text-center">
                   <h5 class="card-title fw-bold">GDSC</h5>
                   <h6 class="card-title fw-bold">(Google Developers Student Club)</h6>
-                  <p class="card-text text-muted mb-1">Member</p>
-                  <p class="card-text small text-secondary">2023 - 2024</p>
+                  <p class="card-text mb-1">Member</p>
+                  <p class="small">2023 - 2024</p>
                 </div>
               </div>
             </div>
 
             <div class="col-md-6">
-              <div class="card h-100 shadow-sm organization-card">
-                <div class="card-body text-center">
+              <div class="glass-container">
+                <div class="bi bi-people-fill card-body text-center">
                   <h5 class="card-title fw-bold">Organization Name 2</h5>
-                  <p class="card-text text-muted mb-1">Your Role/Affiliation Title</p>
-                  <p class="card-text small text-secondary">Start Date - End Date</p>
+                  <p class="card-text mb-1">Your Role/Affiliation Title</p>
+                  <p class="small">Start Date - End Date</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
 </body>
