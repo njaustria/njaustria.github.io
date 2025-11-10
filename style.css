@@ -41,7 +41,7 @@ h3 {
     font-size: 1.1rem;
 }
 
-#background-video {
+#background-image {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -50,7 +50,7 @@ h3 {
     width: auto;
     height: auto;
     z-index: -100;
-    background-size: cover;
+    object-fit: cover;
     filter: brightness(0.9) blur(1px);
 }
 
